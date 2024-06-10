@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Big Estate"),
+        title: Text("Leads Earth"),
       ),
       body: Center(
         child: widgetList[myIndex],

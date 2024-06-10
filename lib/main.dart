@@ -61,7 +61,7 @@ class _MyLoginPageState extends State<MyLoginPage>{
 
     return Scaffold(
       appBar: AppBar(
-          title: Text("Big Estate")
+          title: Text("Leads Earth")
       ),
 
       body: Padding(
@@ -186,11 +186,7 @@ class _MyLoginPageState extends State<MyLoginPage>{
         ),
       ),
     );
-
   }
-
-
-
 }
 
 
