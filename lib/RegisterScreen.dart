@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:leads_earth/home_screen.dart';
 import 'package:leads_earth/main.dart';
 
+import 'MyLoginPage.dart';
+
 class RegisterScreen extends StatefulWidget {
   @override
   _RegisterScreenState createState() => _RegisterScreenState();
