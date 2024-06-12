@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         currentIndex: myIndex,
         selectedItemColor: Colors.blue, // Color for selected item
-        unselectedItemColor: Colors.grey, // Color for unselected items
+        unselectedItemColor: const Color(0xFF6C6C6C), // Color for unselected items
         showSelectedLabels: true,
         items: [
           BottomNavigationBarItem(
