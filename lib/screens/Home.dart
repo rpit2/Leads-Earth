@@ -5,6 +5,9 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
+  void onExtendAdClick(){
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -232,10 +235,211 @@ class _HomeState extends State<Home> {
               ),
             ),
 
-            SizedBox(height: 24,),
+
+
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              child: const Text(
+                "Recent Ads",
+                
+                textAlign: TextAlign.start,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
+              child: Container(
+                padding: EdgeInsets.all(8),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color(0x9EBDBDBD),
+                    width: 1.0
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                child: Column(
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                              "see details",
+                              style:  TextStyle(
+                                color: Colors.blue,
+                                fontSize: 14
+                              ),
+                          ),
+                          Icon(
+                              Icons.arrow_forward_ios_rounded,
+                             color: Colors.blue,
+                            size: 14,
+                          )
+                        ],
+                      )
+                    ),
+
+                    Row(
+                      children: [
+                        //imge
+                        Container(
+                          height: 80,
+                          width: 80,
+                          child: Image.asset('assets/images/building.jpg'),
+                        ),
+
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+
+                                padding: EdgeInsets.fromLTRB(12, 0, 8, 0),
+                                child: const Text("Leads Plan",
+                                  style: TextStyle(
+                                    fontSize: 14
+                                  ),
+                                )),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4)
+                              ),
+                              padding: const EdgeInsets.all(4.0),
+                              child: Row(
+                                children: [
+
+                                   Padding(
+                                     padding: EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                     child: Container(
+                                       padding: EdgeInsets.all(4),
+                                       decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                         borderRadius: BorderRadius.circular(4)
+                                       ),
+                                       child: const Text(
+                                         "Finished",
+                                         style: TextStyle(
+                                             fontWeight: FontWeight.bold,
+                                             color: Colors.white,
+                                             backgroundColor: Colors.grey,
+                                             fontSize: 12
+                                         ),
+                                       ),
+                                                                       ),
+                                   ),
+                                  Container(
+                                    height: 25,
+                                    width: 25,
+                                    child: Image.asset('assets/images/facebook.png'),
+                                  ),
+
+                                  SizedBox(width: 8,),
+
+                                  Container(
+                                    height: 25,
+                                    width: 25,
+                                    child: Image.asset('assets/images/instagram.png'),
+                                  ),
+                                ],
+
+                              ),
+                            )
+                          ],
+
+                        )
+
+                      ],
+                    ),
+
+
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Text("419451",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14
+                                ),
+                              ),
+                              Text(
+                                  "Ad Views",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                    fontSize: 12
+                                ),
+                              )
+                            ],
+                          ),
+
+                          Column(
+                            children: [
+                              Text("419451",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14
+                                ),
+                              ),
+                              Text(
+                                "Ad Views",
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12
+                                ),
+                              )
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Text("419451",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14
+                                ),
+                              ),
+                              Text(
+                                "Ad Views",
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 10,),
+                    
+                    ElevatedButton(
+                        onPressed: onExtendAdClick ,
+                        style: ElevatedButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.blue, // text color
+                        ),
+
+                        child: const Text(
+                        "Extend Ad",
+                         style: TextStyle(
+                           color: Colors.white
+                         ),
+
+
+                    ))
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
